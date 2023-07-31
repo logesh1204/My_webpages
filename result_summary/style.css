@@ -1,0 +1,168 @@
+*{
+margin:0;
+padding:0;
+}
+@font-face
+{
+	font-family:Hanken Grotesk;
+	src:url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+	src:url('./assets/fonts/static/HankenGrotesk-Bold.ttf');
+	src:url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+	src:url('./assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+body{
+	background:grey;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	font-size:18px;
+	font-family:Hanken Grotesk;
+}
+.container
+{
+	width:500px;
+	height:325px;
+	background:white;
+	border-radius:20px;
+	display:flex;
+	
+}
+.Result{
+	width:50%;
+	padding:1em;
+}
+.marks
+{
+	background: linear-gradient(130deg, hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+	border-radius:20px;
+	color:white;
+	text-align:center;
+	
+}
+.marks h5
+{
+	margin-bottom:20px;
+}
+.circle
+{
+	display:inline-block;
+	border-radius: 59px;
+    background: linear-gradient(145deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    box-shadow: 8px 20px 130px 0px hsla(256, 72%, 46%, 1), -12px -12px 73px hsla(241, 72%, 46%, 0);
+	width:110px;
+	height:110px;
+	align-items:center;
+	position:relative;
+	
+		
+}
+.num
+{
+	display:block;
+	font-size:50px;
+	position:relative;
+	top:20px;
+	padding-bottom: 5px;
+}
+.small
+{
+	padding:10px;
+	font-size:12px;
+	 opacity: 0.5;
+}
+h4
+{
+	margin-top:20px;
+	font-size:25px;
+	font-weight:500;
+	color:white;
+}
+
+p {
+    font-size: 0.7em;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+
+.score{
+	
+	display:flex;
+}
+.score-right{
+	border-radius:10px;
+	display:flex;
+	padding:10px;
+	
+	justify-content:space-between;
+	margin:10px 0px;
+	
+	
+}
+img{
+	margin-right:10px;
+}
+.text-align{
+	color: hsl(224, 30%, 27%);
+	font-size:15px;
+	opacity;0.9;
+	
+	
+}
+.bold{font-weight:bold; margin-right:5px;}
+.Reaction
+{
+	background:hsl(0deg 100% 67% / 5%);
+	color:hsl(0deg 100% 67%);
+	
+}
+.Memory
+{
+	background:hsl(39deg 100% 56% / 5%);
+	color:hsl(39, 100%, 56%);
+}
+.Verbal
+{
+	color:hsl(166, 100%, 37%);
+	background:hsl(166deg 100% 37% / 5%);
+}
+.Visual
+{
+	color:hsl(234, 85%, 45%);
+	background:hsl(234deg 85% 45% / 5%)
+}
+
+Button{
+	margin:10px;
+    padding:10px 70px;
+	border-radius:20px;
+	border:none;
+	color:white;
+	background:hsl(224, 30%, 27%);
+}
+button:hover
+{
+	background:hsl(241, 81%, 54%);
+	cursor:pointer;
+}
+@media screen and (max-width:390px)
+{
+	.container{ 
+	width:100%;
+	height:100%;
+	flex-direction:column;
+	border-radius:0px;
+	}
+	.Result{
+		width:90%;
+		}
+	.marks{border-radius:0 0 20px 20px;}
+	.score-right{margin:20px;}
+	.pos h5{margin-left:20px;}
+	Button{
+	margin:20px 40px;
+	padding:10px 100px
+   
+}
+}
